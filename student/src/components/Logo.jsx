@@ -1,10 +1,10 @@
 export default function Logo() {
   return (
-    <div className="brand">
-      <div className="brand-mark">V</div>
+    <div className="brand vico-logo-brand">
+      <div className="brand-mark">✦</div>
       <div>
-        <div className="brand-name">VICL</div>
-        <div className="brand-tagline">Learn • Practice • Grow</div>
+        <div className="brand-name">VICO</div>
+        <div className="brand-tagline">Learn · Explore · Create</div>
       </div>
     </div>
   );
