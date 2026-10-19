@@ -13,7 +13,9 @@ function App() {
       <Route path="/student/dashboard" element={<StudentPortal page="dashboard" />} />
       <Route path="/student/learning" element={<StudentPortal page="learning" />} />
       <Route path="/student/learning/chapter/:id" element={<StudentPortal page="chapter" />} />
-      <Route path="/student/assignments" element={<StudentPortal page="assignments" />} />
+      <Route path="/student/assignments" element={<Navigate to="/student/exercises" replace />} />
+      <Route path="/student/exercises" element={<StudentPortal page="exercises" />} />
+      <Route path="/student/exercises/chapter/1" element={<StudentPortal page="chapter1exercise" />} />
       <Route path="/student/periodic-tests" element={<StudentPortal page="tests" />} />
       <Route path="/student/study-material" element={<StudentPortal page="material" />} />
       <Route path="/student/progress" element={<StudentPortal page="progress" />} />
