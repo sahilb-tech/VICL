@@ -8,3 +8,28 @@
 .match{display:grid;grid-template-columns:1fr 1fr;gap:22px}.col{display:flex;flex-direction:column;gap:10px}.item{border:2px solid var(--line);border-radius:14px;background:white;padding:14px;text-align:left;cursor:pointer}.item.active{border-color:#397ff4;background:#eff5ff}.item.done{border-color:#27ae6b;background:#eafff3}
 .words{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.word{border:2px solid var(--line);border-radius:15px;padding:15px;background:white;font-weight:900;cursor:pointer}.word.selected{border-color:#397ff4;background:#eff6ff}.sentence{font-size:22px;line-height:1.8}.blank{display:inline-block;min-width:130px;text-align:center;border-bottom:4px solid #4389f6;color:#4389f6;font-weight:900}.letters{display:flex;justify-content:center;gap:8px;font-size:38px;font-weight:900;margin:22px}.slot{width:50px;border-bottom:4px solid #4389f6;text-align:center}.machine{text-align:center;font-size:105px;margin:5px}.palette{display:flex;justify-content:center;gap:11px;margin:14px}.color{width:38px;height:38px;border-radius:50%;border:3px solid white;box-shadow:0 0 0 1px #c2ccda;cursor:pointer}.lab{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.lab .item{text-align:center;font-weight:900}.labicon{font-size:35px;display:block}.result{text-align:center;padding:45px 25px}.trophy{font-size:65px}.score{font:800 66px 'Baloo 2';color:#3158d6}.stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:20px}.stat{background:#f2f5fa;border-radius:15px;padding:13px;min-width:125px}.stat b{display:block;font-size:25px}.stars{font-size:42px}.admin{padding:30px}.admin h2{font:800 30px 'Baloo 2'}.admin textarea,.admin select{width:100%;padding:12px;border:1px solid #d7e1ed;border-radius:12px;font:inherit}.admin-list{margin-top:18px;display:grid;gap:8px}.admin-row{background:#f4f7fb;border-radius:12px;padding:12px;display:flex;justify-content:space-between}
 @media(max-width:700px){.options,.match,.words,.lab{grid-template-columns:1fr}.hero h1{font-size:37px}.inner{padding:20px}.crumb{font-size:12px}.qtitle{font-size:25px}}
+/* Textbook-inspired worksheet styling */
+body{background:#e9e5d9;color:#24372b;font-family:Georgia,'Times New Roman',serif}
+.topbar{background:#fffdf5;border-bottom:2px solid #d6d0b9;box-shadow:none}
+.brand{font-family:Georgia,serif;background:none;color:#235f50;letter-spacing:0}.brand span{color:#235f50}
+.crumb{background:#e7eee2;color:#315d4b;border:1px solid #c6d8c5}
+#app{max-width:980px}
+.screen{background:#fffdf5;border:1px solid #d3cdb8;border-radius:7px;box-shadow:0 7px 20px #4c49351c}
+.hero{background:#fffdf5;min-height:530px}.hero:after{content:''}
+.hero h1{font-family:Georgia,serif;color:#27604c;font-size:40px;line-height:1.08}
+.badge,.pill{background:#dbe9d4;color:#255943;border:1px solid #aac6a5;border-radius:4px;font-family:Georgia,serif}
+.hero-card{border:1px solid #d6ceb7;border-radius:5px;box-shadow:none;background:#fffef9}
+.hero-card h2,.qtitle,.admin h2{font-family:Georgia,serif;color:#27604c}
+.btn{border-radius:4px;font-family:Georgia,serif;box-shadow:none}.primary{background:#2e6c55;color:#fff}
+.secondary{background:#f0eddc;color:#315844;border:1px solid #cfc7a9}
+.head{background:#fffdf5}.meta{font-family:Georgia,serif;color:#42634f}
+.bar{background:#e8e2ce;border-radius:0}.bar div{background:#598a67;border-radius:0}
+.qtitle{font-size:27px}
+.option{border:1px solid #d6ceb7;border-radius:5px;background:#fffef9;font-family:Georgia,serif}
+.option.selected{border:2px solid #4e8061;background:#f3f7ee}.option.correct{border:2px solid #43815b;background:#eaf3e4}.option.wrong{border:2px solid #b65b4e;background:#faece5}
+.item,.word,.lab .item{border:1px solid #d6ceb7;border-radius:4px;background:#fffef9;font-family:Georgia,serif}
+.item.active,.word.selected,.lab .item.active{border:2px solid #4e8061;background:#f3f7ee}.item.done{border:2px solid #6c9a72;background:#eaf3e4}
+.callout{border-radius:4px;font-family:Georgia,serif}.good{background:#eaf3e4;color:#285d3d}.bad{background:#faece5;color:#8c342b}
+.sentence{font-family:Georgia,serif;color:#263c2d}.blank,.slot{border-color:#46795b;color:#315e47}
+.score{font-family:Georgia,serif;color:#27604c}.stat{background:#f1eedf;border:1px solid #ddd5be;border-radius:4px}
+@media(max-width:700px){.hero h1{font-size:32px}.qtitle{font-size:23px}}
