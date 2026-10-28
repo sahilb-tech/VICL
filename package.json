@@ -1,0 +1,31 @@
+{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
+  "name": "vicl-student",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest"
+  },
+  "devDependencies": {}
+<<<<<<< HEAD
+=======
+=======
+  "dependencies": {
+    "react-router-dom": "^7.18.4"
+  }
+>>>>>>> 03fe381a8698f6a2b86f8352c5e47fd3ee5cbdeb
+>>>>>>> origin/main
+}
