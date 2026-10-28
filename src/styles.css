@@ -47,6 +47,7 @@
 .portal-chapter-expanded-content .portal-topic-progress{border-top:1px solid #f0edf6}
 @keyframes chapterReveal{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:760px){.portal-chapter-learning-card .portal-chapter-row{align-items:center;flex-wrap:wrap}.portal-chapter-expand{gap:9px}.portal-chapter-inline-progress{display:none}.portal-chapter-learning-card .portal-chapter-status{display:inline-flex;margin-left:52px}.portal-chapter-mini-track{margin-top:7px}.portal-chapter-expand .portal-chapter-number{width:38px;height:38px}}
+<<<<<<< HEAD
 
 /* VICL video-first chapter experience inspired by the supplied course UI reference */
 .vicl-video-course-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,.9fr);gap:18px;align-items:stretch;margin:18px 0 20px}
@@ -91,3 +92,5 @@
 .vicl-topic-preview p{font-size:10px;color:var(--muted);line-height:1.5;margin:5px 0 0}
 @media(max-width:980px){.vicl-video-course-layout{grid-template-columns:minmax(0,1.35fr) minmax(240px,.9fr);gap:12px}.vicl-video-caption{align-items:flex-start}.vicl-video-tag{display:none}}
 @media(max-width:760px){.vicl-video-course-layout{grid-template-columns:1fr}.vicl-course-contents{max-height:340px}.vicl-video-caption{padding:14px}.vicl-video-caption h2{font-size:16px}.vicl-video-placeholder{min-height:190px}.vicl-topic-preview-grid{grid-template-columns:1fr}}
+=======
+>>>>>>> origin/main

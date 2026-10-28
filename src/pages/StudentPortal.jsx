@@ -147,6 +147,7 @@ function Chapter(){
  function saveTopic(index){const current=(()=>{try{return JSON.parse(localStorage.getItem(COMPLETED_TOPICS_KEY)||'{}')}catch{return {}}})();const old=current[n]||[];const next=old.includes(index)?old:[...old,index];current[n]=next;localStorage.setItem(COMPLETED_TOPICS_KEY,JSON.stringify(current));setDone(next);window.dispatchEvent(new Event('vico-progress-updated'))}
  function finishChapter(){const all=chapterOneLessons.every((_,i)=>done.includes(i));if(!all||!quizSubmitted)return;const current=readCompletedChapters();if(!current.includes(n)){localStorage.setItem(COMPLETED_CHAPTERS_KEY,JSON.stringify([...current,n]));setCompleted(true);window.dispatchEvent(new Event('vico-progress-updated'))}}
  const pct=n===1?Math.round(done.length/7*100):0;
+<<<<<<< HEAD
  const videoPath = n === 1 ? '/videos/foundation-1/chapter-1.mp4' : null;
  const videoAndContents = <div className="vicl-video-course-layout">
    <section className="vicl-video-column">
@@ -165,6 +166,11 @@ function Chapter(){
  return <Shell title="Chapter 1" subtitle="More about a Computer">
   <div className="portal-course-banner"><span>📖</span><div><small>FOUNDATION 1 · CHAPTER 1</small><h2>More about a Computer</h2><p>Discover computers, learn their parts, and practise using them safely.</p></div><span className="portal-course-grade">GRADE 1</span></div>
   {videoAndContents}
+=======
+ if(n!==1)return <Shell title={`Chapter ${n}`} subtitle={title}><div className="portal-course-banner"><span>📖</span><div><small>FOUNDATION 1 · CHAPTER {n}</small><h2>{title}</h2><p>Detailed lesson content for this chapter will be added from its textbook pages.</p></div></div><section className="portal-card"><h2>Chapter content</h2><p>Chapter 1 is currently the first fully developed interactive lesson. Return to My Learning to explore it.</p><Link className="portal-primary" to="/student/learning/chapter/1">Open Chapter 1 →</Link></section></Shell>;
+ return <Shell title="Chapter 1" subtitle="More about a Computer">
+  <div className="portal-course-banner"><span>📖</span><div><small>FOUNDATION 1 · CHAPTER 1</small><h2>More about a Computer</h2><p>Discover computers, learn their parts, and practise using them safely.</p></div><span className="portal-course-grade">GRADE 1</span></div>
+>>>>>>> origin/main
   <div className="portal-card portal-learning-path-progress"><div className="portal-learning-progress-top"><div><span className="portal-progress-eyebrow">FOUNDATION 1 · GRADE 1</span><h3>Your chapter progress</h3></div><strong>{pct}%</strong></div><div className="portal-learning-progress-track"><span style={{width:`${pct}%`}}/></div><div className="portal-learning-progress-bottom"><span><b>{done.length} of 7</b> topics completed</span><span>{7-done.length} topics left to learn</span></div></div>
   <section className="portal-card vicl-chapter-learning"><div className="portal-card-head"><div><h2>Your learning journey</h2><p>Choose a topic, read the explanation, try the activity, then answer the practice questions.</p></div><span className="portal-pill">TOPIC {topicIndex+1} OF 7</span></div>
    <div className="vicl-topic-tabs">{chapterOneLessons.map((item,i)=><button key={item.title} className={`${topicIndex===i?'active':''} ${done.includes(i)?'done':''}`} onClick={()=>{setTopicIndex(i);setQuizSubmitted(false)}}><span>{done.includes(i)?'✓':i+1}</span>{item.title}</button>)}</div>

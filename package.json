@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
   "name": "vicl-student",
   "private": true,
   "version": "0.1.0",
@@ -16,4 +20,12 @@
     "react-router-dom": "latest"
   },
   "devDependencies": {}
+<<<<<<< HEAD
+=======
+=======
+  "dependencies": {
+    "react-router-dom": "^7.18.4"
+  }
+>>>>>>> 03fe381a8698f6a2b86f8352c5e47fd3ee5cbdeb
+>>>>>>> origin/main
 }
